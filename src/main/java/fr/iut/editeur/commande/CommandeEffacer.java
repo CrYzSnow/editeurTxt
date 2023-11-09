@@ -13,8 +13,7 @@ public class CommandeEffacer extends CommandeDocument {
             System.err.println("Format attendu : effacer;depart;fin");
             return;
         }
-        String texte = parameters[1];
-        this.document.ajouter(texte);
+        this.document.effacer(Integer.parseInt(parameters[1]),Integer.parseInt(parameters[2]));
         super.executer();
     }
 }
