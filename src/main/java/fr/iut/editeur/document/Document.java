@@ -36,6 +36,11 @@ public class Document {
         remplacer(start, end, "");
     }
 
+    public void clear() {
+        effacer(0, texte.length());
+        ajouter("z");
+    }
+
     @Override
     public String toString() {
         return this.texte;
