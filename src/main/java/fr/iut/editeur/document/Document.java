@@ -38,7 +38,6 @@ public class Document {
 
     public void clear() {
         effacer(0, texte.length());
-        ajouter("z");
     }
 
     @Override
